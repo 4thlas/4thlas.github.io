@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="avatar.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="22.627417"
+     inkscape:cx="10.827573"
+     inkscape:cy="17.169436"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="715"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath160">
+      <path
+         id="path5"
+         style="stroke-width:0.1;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 438.25066,553.76374 859.87054,0 v 201.39554 l -859.87054,0 z"
+         sodipodi:nodetypes="ccccc" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect5-4"
+         width="20"
+         height="200"
+         x="530"
+         y="595" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath54">
+      <path
+         id="path54"
+         style="stroke-width:0.0999999;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 1691.1994,-792.32001 h 1634.8919 v 92.82806 H 1691.1994 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath25">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect25-8"
+         width="78"
+         height="45.033199"
+         x="763.61322"
+         y="452.82422" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath24">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect24"
+         width="44.999748"
+         height="77.937294"
+         x="251.53429"
+         y="222.73541" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath51">
+      <path
+         id="path51"
+         style="stroke-width:0.0999999;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 1806.4991,-753.5228 h 1637.2646 v 66.90533 H 1806.4991 Z" />
+    </clipPath>
+    <rect
+       x="0"
+       y="0"
+       width="32"
+       height="32"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-weight:300;font-size:26.6667px;font-family:'Footlight MT Light';-inkscape-font-specification:'Footlight MT Light,  Light';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       x="3.5917969"
+       y="0"><tspan
+         x="0"
+         y="58.250033"
+         id="tspan3"><tspan
+           style="font-weight:normal;font-family:'MS UI Gothic';-inkscape-font-specification:'MS UI Gothic'"
+           id="tspan2">A</tspan></tspan></text>
+    <rect
+       style="fill:#e5e5e5;fill-opacity:1;stroke:#cc0038;stroke-width:2.10876432;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect2"
+       width="8.2468557"
+       height="26.981537"
+       x="12.217304"
+       y="3.2146292"
+       transform="matrix(1,0,-0.28752173,0.95777411,0,0)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0049;stroke-width:2.14571;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect2-1"
+       width="8.5179386"
+       height="27.046539"
+       x="-19.490086"
+       y="3.2287669"
+       transform="matrix(-1,0,0.29625916,0.95510759,0,0)" />
+  </g>
+</svg>
