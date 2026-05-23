@@ -2,7 +2,7 @@ import avatar from "@/assets/avatar.svg";
 import "./Avatar.css";
 
 const techIcons = import.meta.glob(
-    "@/assets/icons/*.svg",
+    "@/assets/icons/techIcons/*.svg",
     {
         eager: true,
         import: "default"
