@@ -14,7 +14,7 @@ const iconCount = Object.keys(techIcons).length;
 function Avatar()
 {
     return (
-        <div className="avatar-wrapper">
+        <div className="avatar-wrapper no-select">
             <img
                 className="avatar"
                 src={avatar}
@@ -30,7 +30,7 @@ function Avatar()
                         <div key={index} className="icon-wrapper" style={{"--icon-index": index}}>
                             <img
                                 src={value}
-                                alt="tech icon"
+                                alt={key.split("_").pop().split(".")[0]}
                                 className="tech-icon"
                             />
                         </div>

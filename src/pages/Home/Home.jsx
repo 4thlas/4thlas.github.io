@@ -14,7 +14,7 @@ function Home()
     }, [location.pathname, navigate]);
 
     return <main className="home">
-        <header className="w-100 column flex-center">
+        <header className="w-100 flex-center">
             <Avatar />
 
             <h1>

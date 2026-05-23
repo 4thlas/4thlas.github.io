@@ -1,6 +1,8 @@
 .avatar-wrapper
 {
     --rotation-speed: 120s;
+    --icon-count: 0;
+    --icon-index: 0;
 
     position: relative;
     width: 300px;
@@ -13,22 +15,19 @@
 
 .avatar
 {
-    width: 120px;
-    height: 150px;
-
-    --icon-count: 0;
-    --icon-index: 0;
+    width: 110px;
+    height: auto;
 }
 
 .circle-container
 {
-    position: absolute;
-    inset: 0;
-
     --d: 50px;
     --rel: 1;
     --ba: calc(1turn / var(--icon-count));
     --r: calc(0.5 * (1 + var(--rel)) * var(--d) / tan(0.5 * var(--ba)));
+
+    position: absolute;
+    inset: 0;
 
     display: grid;
     place-items: center;
@@ -59,9 +58,9 @@
     --ca: calc(var(--icon-index) * var(--ba));
 
     transform:
-            rotate(var(--ca))
-            translate(var(--r))
-            rotate(calc(-1 * var(--ca)));
+        rotate(var(--ca))
+        translate(var(--r))
+        rotate(calc(-1 * var(--ca)));
 }
 
 @-webkit-keyframes spin {
