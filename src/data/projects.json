@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "title": "klawka.pl",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "url": "https://klawka.pl/home",
+      "imageFileName": "klawka.svg",
+      "deployed": true
+    },
+    {
+      "title": "BitMage",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "url": "https://github.com/4thlas/BitMage",
+      "imageFileName": "bitmage.svg",
+      "deployed": false
+    },
+    {
+      "title": "klawka.pl",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "url": "https://klawka.pl/home",
+      "imageFileName": "klawka.svg",
+      "deployed": false
+    },
+    {
+      "title": "klawka.pl",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "url": "https://klawka.pl/home",
+      "imageFileName": "klawka.svg",
+      "deployed": false
+    }
+  ]
+}

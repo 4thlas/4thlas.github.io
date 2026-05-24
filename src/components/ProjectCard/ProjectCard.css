@@ -1,0 +1,32 @@
+.project-card
+{
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+
+    color: var(--white);
+    text-decoration: none;
+
+    background-color: var(--dark-blue);
+    border: 3px solid var(--gray);
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.project-card img
+{
+    width: 100%;
+    height: 100px;
+}
+
+.project-card:hover
+{
+    border-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.project-card p, .project-card h3
+{
+    margin: 0;
+}

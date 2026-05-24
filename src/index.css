@@ -1,10 +1,10 @@
 :root
 {
-    --bg-color: #080b0e;
-    --bg-color-scnd: #282c34;
-    --text-color: #ffffff;
-    --text-color-dim: #8f8f8f;
-    --accent-color: #ff0048;
+    --accent-color: #00ff9d;
+    --white: #ffffff;
+    --gray: #8f8f8f;
+    --black: #080b0e;
+    --dark-blue: #16181c;
 
     --font-size-small: 0.8rem;
     --font-size-base: 20px;
@@ -27,8 +27,8 @@ body, html
     font-family: 'Lexend', sans-serif;
     font-size: var(--font-size-base);
 
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--black);
+    color: var(--white);
 
     scrollbar-gutter: stable both-edges;
     overflow-x: hidden;
@@ -52,19 +52,20 @@ main
 
     gap: 60px;
 }
+
 @media (min-width: 768px)
 {
-    main
+    .page-center-col
     {
-        width: 75%;
+        width: 75% !important;
         margin: auto;
     }
 }
 @media (min-width: 1200px)
 {
-    main
+    .page-center-col
     {
-        width: 50%;
+        width: 50% !important;
         margin: auto;
     }
 }
@@ -82,7 +83,7 @@ main
 .p-0 { padding: 0; box-sizing: border-box; }
 .p-5 { padding: 5px; box-sizing: border-box; }
 .p-15 { padding: 15px; box-sizing: border-box; }
-.p-30 { padding: 15px; box-sizing: border-box; }
+.p-30 { padding: 30px; box-sizing: border-box; }
 .m-0 { margin: 0;}
 .m-5 { margin: 5px;}
 .m-15 { margin: 15px;}
@@ -124,6 +125,22 @@ main
     justify-content: center;
     align-items: center;
 }
+.col-space-between
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row-space-between
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
 
 .flex-1 { flex: 1; }
 
@@ -145,7 +162,7 @@ main
 /* Text */
 h1, h2, h3, h4, h5, h6
 {
-    margin: 10px;
+    margin: 10px 0;
 }
 
 h1 { font-size: var(--font-size-huge); }
@@ -155,7 +172,7 @@ h1 { font-size: var(--font-size-huge); }
 .text-right { text-align: right !important; }
 
 .text-accent { color: var(--accent-color); }
-.text-dim { color: var(--text-color-dim); }
+.text-dim { color: var(--gray); }
 
 
 /* Misc */
