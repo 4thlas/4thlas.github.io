@@ -1,7 +1,6 @@
 import {useLocation, useNavigate} from "react-router";
 import {useEffect} from "react";
-import "@/index.css"
-import "./Home.css";
+import "@/index.css";
 import Avatar from "@/components/Avatar/Avatar.jsx";
 import Button from "@/components/Button/Button.jsx";
 import { DiscordIcon, EmailIcon } from "@/components/UiIcons/UiIcons.jsx";
@@ -16,7 +15,7 @@ function Home()
     }, [location.pathname, navigate]);
 
     return <main className="home">
-        <header className="w-100 g-15 flex-center">
+        <header className="w-100 h-100 g-15 flex-center fullscreen">
 
             <Avatar />
 
@@ -48,6 +47,11 @@ function Home()
 
             </address>
         </header>
+
+
+        <section className="w-100 g-15 flex-center">
+            <h2>My works</h2>
+        </section>
     </main>
 }
 export default Home;
