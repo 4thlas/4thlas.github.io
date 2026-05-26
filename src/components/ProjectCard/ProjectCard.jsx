@@ -1,17 +1,25 @@
 import "./ProjectCard.css";
 import "@/index.css";
+import {useRef} from "react";
+import useTilt from "@/hooks/useTilt.jsx";
 
 function ProjectCard({title, desc, image, url, deployed})
 {
-    return <a href={url} target="_blank" className="project-card col p-30 col-space-between">
-        <div className="col g-15">
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
-            <p>{desc}</p>
-        </div>
+    const cardRef = useRef(null);
 
-        <p className="text-accent text-right">{deployed ? "Visit" : "See repo"} {">>>"}</p>
-    </a>
+    useTilt(cardRef);
+
+    return <div className="perspective-wrapper">
+        <a href={url} target="_blank" className="project-card col p-30 col-space-between" ref={cardRef}>
+            <div className="col g-15">
+                <img src={image} alt={title} />
+                <h3>{title}</h3>
+                <p>{desc}</p>
+            </div>
+
+            <p className="text-accent text-right">{deployed ? "Visit" : "See repo"} {">>>"}</p>
+        </a>
+    </div>
 }
 
 export default ProjectCard;

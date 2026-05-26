@@ -50,7 +50,6 @@ function Home()
 
 
         <section className="g-15 flex-center">
-            <h2>My deployed works</h2>
             <ProjectCardList />
         </section>
     </main>
