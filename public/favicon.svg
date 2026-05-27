@@ -16,7 +16,7 @@
      transform="translate(-2.1777341,-2.0631988)">
     <path
        id="rect2"
-       style="baseline-shift:baseline;display:inline;overflow:visible;opacity:1;vector-effect:none;fill:#00e78f;stroke-linecap:square;paint-order:fill markers stroke;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       style="baseline-shift:baseline;display:inline;overflow:visible;opacity:1;vector-effect:none;fill:#00b36d;fill-opacity:1;stroke-linecap:square;paint-order:fill markers stroke;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
        d="m 11.161933,2.1595482 6.29e-4,29.0896648 h 10.355469 l -0.0013,-13.210154 -2.106934,-3.605365 6.39e-4,14.708991 h -6.138672 l -10e-4,-24.8725302 H 13.46803 L 12.85354,3.2199496 h 8.519531 l 0.145164,0.2467473 -8.34e-4,-1.3071487 z"
        transform="matrix(1,0,-0.28752173,0.95777411,0,0)" />
     <rect

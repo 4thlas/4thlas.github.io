@@ -63,12 +63,6 @@ header
 
 @media (min-width: 768px)
 {
-    header
-    {
-        height: 100vh !important;
-        padding-top: 0;
-    }
-
     .page-center-col
     {
         width: 75% !important;

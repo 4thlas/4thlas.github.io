@@ -43,17 +43,19 @@
     transition: all 0.5s ease;
 }
 
-.project-card:hover
+@media (hover: hover) and (pointer: fine)
 {
-    border-color: var(--accent-color);
-    transform: scale(1.05);
+    .project-card:hover
+    {
+        border-color: var(--accent-color);
 
-    -webkit-box-shadow: 0px 0px 23px -3px rgba(0,255,157,0.56);
-    box-shadow: 0px 0px 23px -3px rgba(0,255,157,0.56);
-}
-.project-card:hover img
-{
-    transform: scale(1.05);
+        -webkit-box-shadow: 0 0 23px -3px rgba(0,255,157,0.56);
+        box-shadow: 0 0 23px -3px rgba(0,255,157,0.56);
+    }
+    .project-card:hover img
+    {
+        transform: scale(1.05);
+    }
 }
 
 .project-card p, .project-card h3

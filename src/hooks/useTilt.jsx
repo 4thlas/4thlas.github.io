@@ -13,7 +13,7 @@ function useTilt(elementRef)
 
         const handleMouseMove = (e) =>
         {
-            if (scheduledFrame) return;
+            if (scheduledFrame) return; // Prevent frame queue
 
             scheduledFrame = requestAnimationFrame(() =>
             {
@@ -21,10 +21,11 @@ function useTilt(elementRef)
 
                 const rect = element.getBoundingClientRect();
 
-                const xFromCenter = e.clientX - rect.left - rect.width / 2;
-                const yFromCenter = e.clientY - rect.top - rect.height / 2;
+                // Get X, Y offsets from element center
+                const xOffset = e.clientX - rect.left - rect.width / 2;
+                const yOffset = e.clientY - rect.top - rect.height / 2;
 
-                element.style.transform = `rotateX(${-yFromCenter / 20}deg) rotateY(${xFromCenter / 20}deg)`;
+                element.style.transform = `rotateX(${-yOffset / 20}deg) rotateY(${xOffset / 20}deg) scale(1.05)`;
             });
         }
 
