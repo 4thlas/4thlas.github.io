@@ -1,5 +1,5 @@
-import "./Button.css";
-import "@/index.css";
+import "@/styles/index.scss";
+import "./Button.scss";
 
 function Button({label, color, icon: Icon, onClick, url})
 {

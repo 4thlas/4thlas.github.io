@@ -1,0 +1,54 @@
+@use "@/styles/vars.scss" as *;
+
+@mixin button-theme($text, $bg, $border: transparent)
+{
+    color: $text;
+    background-color: $bg;
+    border: 3px solid $border;
+
+    &:hover
+    {
+        color: $bg;
+        background-color: $text;
+    }
+}
+
+.button.accent { @include button-theme($accent-color, $white); }
+.button.white { @include button-theme($white, $black); }
+.button.black { @include button-theme($white, $black, $white); }
+.button.discord { @include button-theme($white, #5865F2); }
+
+.button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    color: var(--btn-text-color);
+    background-color: var(--btn-bg-color);
+
+    text-decoration: none;
+    cursor: pointer;
+
+    border: 3px solid transparent;
+    border-radius: 10px;
+
+    transition: color 0.2s ease-in-out,
+                background-color 0.2s ease-in-out,
+                transform 0.05s ease-in-out;
+
+    svg
+    {
+        width: 20px;
+        height: 100%;
+    }
+
+    &:active { transform: scale(0.95); }
+}
+
+
+

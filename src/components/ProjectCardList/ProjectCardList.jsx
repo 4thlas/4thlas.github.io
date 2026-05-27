@@ -1,4 +1,4 @@
-import "@/index.css";
+import "@/styles/index.scss";
 import projectData from "@/data/projects.json"
 import ProjectCard from "@/components/ProjectCard/ProjectCard.jsx";
 

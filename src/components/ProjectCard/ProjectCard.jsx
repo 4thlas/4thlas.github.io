@@ -1,5 +1,5 @@
-import "./ProjectCard.css";
-import "@/index.css";
+import "./ProjectCard.scss";
+import "@/styles/index.scss";
 import {useRef} from "react";
 import useTilt from "@/hooks/useTilt.jsx";
 

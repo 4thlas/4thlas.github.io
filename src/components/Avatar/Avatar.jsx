@@ -1,5 +1,5 @@
 import avatar from "@/assets/avatar.svg";
-import "./Avatar.css";
+import "./Avatar.scss";
 
 const techIcons = import.meta.glob(
     "@/assets/icons/techIcons/*.svg",

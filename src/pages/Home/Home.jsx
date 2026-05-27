@@ -1,7 +1,7 @@
 import {useLocation, useNavigate} from "react-router";
 import {useEffect, useState} from "react";
-import "@/index.css";
-import "./Home.css";
+import "@/styles/index.scss";
+import "./Home.scss";
 import Avatar from "@/components/Avatar/Avatar.jsx";
 import Button from "@/components/Button/Button.jsx";
 import {DiscordIcon, EmailIcon} from "@/components/UiIcons/UiIcons.jsx";
