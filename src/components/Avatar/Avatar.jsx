@@ -21,10 +21,7 @@ function Avatar()
                 alt="avatar"
             />
 
-            <div
-                className="circle-container"
-                style={{ "--icon-count": iconCount }}
-            >
+            <div className="circle-container" style={{ "--icon-count": iconCount }}>
                 {
                     Object.entries(techIcons).map(([key, value], index) =>
                         <div key={index} className="icon-wrapper" style={{"--icon-index": index}}>

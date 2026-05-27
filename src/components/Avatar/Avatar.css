@@ -51,6 +51,8 @@
     animation: counter-spin var(--rotation-speed) linear infinite;
 }
 
+
+
 .icon-wrapper
 {
     grid-area: 1 / 1;
@@ -62,6 +64,7 @@
         translate(var(--r))
         rotate(calc(-1 * var(--ca)));
 }
+
 
 @-webkit-keyframes spin {
     from {
