@@ -18,7 +18,10 @@
     border: 3px solid $gray;
     border-radius: 10px;
 
-    transition: transform 0.05s linear;
+    transition: transform 0.05s linear,
+                border-color 0.3s ease,
+                box-shadow 0.03s ease;
+
     will-change: transform;
 
     background-size: cover;
@@ -52,7 +55,7 @@
 {
     .project-card
     {
-        height: auto !important;
+        height: 450px;
     }
 }
 

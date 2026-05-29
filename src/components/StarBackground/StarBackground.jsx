@@ -33,7 +33,7 @@ function StarBackground()
                 const color = Math.floor(Math.random() * 245 + 10); // random brightness
 
                 ctx.fillStyle = `rgb(${color}, ${color}, ${color})`;
-                ctx.fillRect(x, y, 1, 1);
+                ctx.fillRect(x, y, 2, 2);
             }
         });
 
