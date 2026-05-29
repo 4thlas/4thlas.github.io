@@ -1,28 +1,17 @@
 import {useLocation, useNavigate} from "react-router";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import "@/styles/index.scss";
 import "./Home.scss";
 import Avatar from "@/components/Avatar/Avatar.jsx";
 import Button from "@/components/Button/Button.jsx";
 import {DiscordIcon, EmailIcon} from "@/components/UiIcons/UiIcons.jsx";
 import ProjectCardList from "@/components/ProjectCardList/ProjectCardList.jsx";
-import Lottie from "lottie-react";
-const LottieComponent = Lottie.default ?? Lottie;
-import scrollDown from "@/assets/animations/scroll_down.json";
+import ScrollDownPrompt from "@/components/ScrollDownPrompt/ScrollDownPrompt.jsx";
 
 function Home()
 {
     const location = useLocation();
     const navigate = useNavigate();
-    const [scrollTop, setScrollTop] = useState(true);
-
-    useEffect(() =>
-    {
-        const handleScroll = () => setScrollTop(window.scrollY < 20);
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     useEffect(() =>
     {
@@ -61,9 +50,7 @@ function Home()
                 </div>
             </address>
 
-            <div className={`scroll-down-wrapper ${scrollTop ? "" : "invisible"}`}>
-                <LottieComponent animationData={scrollDown} loop autoplay />
-            </div>
+            <ScrollDownPrompt minY={0} maxY={10} />
         </header>
 
 

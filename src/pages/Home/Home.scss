@@ -1,7 +1,7 @@
-.scroll-down-wrapper
+header
 {
-    display: none;
-    transition: all 0.5s ease-in-out;
+    min-height: 800px;
+    padding-top: 15px;
 }
 
 @media (min-width: 768px)
@@ -11,7 +11,4 @@
         height: 100vh !important;
         padding-top: 0;
     }
-
-    .scroll-down-wrapper {display: block}
-    .scroll-down-wrapper.invisible { filter: opacity(0) !important }
 }
