@@ -8,15 +8,3 @@
 
     &.invisible { filter: opacity(0) !important }
 }
-
-@media (min-width: 768px)
-{
-    .scroll-down-wrapper
-    {
-        display: block;
-
-        bottom: 20px;
-        right: 50%;
-        transform: translateX(50%);
-    }
-}
