@@ -26,6 +26,7 @@ function useTilt(elementRef)
                 const yOffset = e.clientY - rect.top - rect.height / 2;
 
                 element.style.transform = `rotateX(${-yOffset / 20}deg) rotateY(${xOffset / 20}deg) scale(1.05)`;
+                element.childNodes.forEach(child => child.style.transform = `translateZ(30px)`);
             });
         }
 
