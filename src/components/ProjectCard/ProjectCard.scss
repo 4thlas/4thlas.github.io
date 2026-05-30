@@ -84,9 +84,38 @@
         box-shadow: 0 0 23px -3px rgba(0,255,157,0.56);
 
         &:before { opacity: 1; }
+
+        .visit-prompt
+        {
+            background: linear-gradient(
+                90deg,
+                $accent-color 0%,
+                $accent-color 40%,
+                #ffffff 50%,
+                $accent-color 60%,
+                $accent-color 100%
+            );
+
+            background-size: 200% 100%;
+            background-position: 200% 0;
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 6s linear infinite;
+        }
     }
+
     .project-card:hover img
     {
         transform: scale(1.05);
     }
+}
+
+@-webkit-keyframes shine
+{
+    0% {background-position: 200% 0;}
+    100% {background-position: -200% 0;}
 }

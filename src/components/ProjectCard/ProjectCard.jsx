@@ -17,7 +17,7 @@ function ProjectCard({title, desc, image, url, deployed})
                 <p>{desc}</p>
             </div>
 
-            <p className="text-accent text-right">{deployed ? "Visit" : "See repo"} {">>>"}</p>
+            <p className="text-accent text-right visit-prompt">{deployed ? "Visit" : "See repo"} {">>>"}</p>
         </a>
     </div>
 }
