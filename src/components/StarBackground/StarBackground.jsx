@@ -30,9 +30,9 @@ function StarBackground()
             {
                 const x = Math.random() * rect.width;
                 const y = Math.random() * rect.height;
-                const color = Math.floor(Math.random() * 245 + 10); // random brightness
+                const alpha = Math.random(); // random brightness
 
-                ctx.fillStyle = `rgb(${color}, ${color}, ${color})`;
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
                 ctx.fillRect(x, y, 2, 2);
             }
         });

@@ -15,10 +15,10 @@
       "deployed": false
     },
     {
-      "title": "klawka.pl",
+      "title": "VoTail - Frontend",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
-      "url": "https://klawka.pl/home",
-      "imageFileName": "klawka.svg",
+      "url": "https://github.com/Votail/votail-frontend",
+      "imageFileName": "VoTail.svg",
       "deployed": false
     },
     {
