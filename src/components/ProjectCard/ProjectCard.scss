@@ -25,6 +25,17 @@
 
     will-change: transform;
 
+    -webkit-tap-highlight-color: transparent;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    *
+    {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
     img
     {
         width: 100%;

@@ -13,17 +13,14 @@ function StarBackground()
     {
         const canvases = canvasRefs.current.map(c => c);
 
-        const dpr = window.devicePixelRatio || 1; // handle device pixel ratio
-
         canvases.forEach(canvas =>
         {
             // canvas size
             const rect = canvas.getBoundingClientRect();
-            canvas.width = rect.width * dpr;
-            canvas.height = rect.height * dpr;
+            canvas.width = rect.width;
+            canvas.height = rect.height;
 
             const ctx = canvas.getContext("2d");
-            ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // scaling canvas down (compensating for size * dpr)
 
             // draw stars randomly
             for (let i = 1; i <= STARS_PER_LAYER; i++)
@@ -37,24 +34,24 @@ function StarBackground()
             }
         });
 
-        let scheduledFrame = null;
+        let targetScroll = 0;
 
         const handleScroll = () =>
         {
-            if (scheduledFrame) return;
-
-            scheduledFrame = requestAnimationFrame(() =>
-            {
-                scheduledFrame = null;
-
-                const scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-
-                canvases.forEach((canvas, index) =>
-                {
-                    canvas.style.transform = `translateY(${scrollY * SPEED * (index + 2)}px)`; // introduce parallax
-                });
-            });
+            targetScroll = window.scrollY;
         }
+
+        const animate = () =>
+        {
+            canvases.forEach((canvas, index) =>
+            {
+                canvas.style.transform = `translateY(${targetScroll * SPEED * (index + 2)}px)`; // introduce parallax
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
 
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll);
