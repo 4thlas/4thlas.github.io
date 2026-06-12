@@ -6,10 +6,13 @@
     background-color: $bg;
     border: 3px solid $border;
 
-    &:hover
+    @media (hover: hover) and (pointer: fine)
     {
-        color: $bg;
-        background-color: $text;
+        &:hover
+        {
+            color: $bg;
+            background-color: $text;
+        }
     }
 }
 

@@ -1,5 +1,3 @@
-import {useLocation, useNavigate} from "react-router";
-import {useEffect} from "react";
 import "@/styles/index.scss";
 import "./Home.scss";
 import Avatar from "@/components/Avatar/Avatar.jsx";
@@ -10,14 +8,6 @@ import ScrollDownPrompt from "@/components/ScrollDownPrompt/ScrollDownPrompt.jsx
 
 function Home()
 {
-    const location = useLocation();
-    const navigate = useNavigate();
-
-    useEffect(() =>
-    {
-        if (location.pathname === "/") navigate("/home");
-    }, [location.pathname, navigate]);
-
     return <main className="flex-center">
         <header className={`h-100 g-15 flex-center page-center-col`}>
 
