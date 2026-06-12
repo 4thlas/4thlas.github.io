@@ -1,22 +1,25 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Home from "@/pages/Home/Home.jsx";
 import StarBackground from "@/components/StarBackground/StarBackground.jsx";
-import Layout from "@/pages/Layout.jsx";
-import {Navigate} from "react-router";
+import Header from "@/components/Header/Header.jsx";
+import Footer from "@/components/Footer/Footer.jsx";
+import ProjectCardList from "@/components/ProjectCardList/ProjectCardList.jsx";
+
+import "@/styles/index.scss";
 
 function App()
 {
-    return (
-        <Router>
-            <StarBackground />
+    return <>
+        <StarBackground />
 
-            <Routes>
-                <Route path="/" element={<Layout />}> <Route index element={<Home/>}/> </Route>
+        <Header />
 
-                <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-        </Router>
-    )
+        <main className="flex-center">
+            <section className="g-15 flex-center">
+                <ProjectCardList />
+            </section>
+        </main>
+
+        <Footer />
+    </>
 }
 
 export default App

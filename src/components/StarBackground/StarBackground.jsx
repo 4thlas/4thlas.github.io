@@ -1,7 +1,6 @@
 import "@/styles/globals.scss";
 import "./StarBackground.scss";
 import {useEffect, useRef} from "react";
-import {useLocation} from "react-router";
 
 const STARS_PER_LAYER = 200;
 const SPEED = 0.2;
@@ -9,7 +8,6 @@ const SPEED = 0.2;
 function StarBackground()
 {
     const canvasRefs = useRef([]);
-    const location = useLocation();
 
     useEffect(() =>
     {
@@ -58,7 +56,7 @@ function StarBackground()
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll);
 
-    }, [location.pathname]);
+    }, []);
 
     return <div className="star-background">
         {
