@@ -2,30 +2,26 @@
   "projects": [
     {
       "title": "klawka.pl",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "desc": "Item shop for Minecraft server. Both frontend and backend were made by me.",
       "url": "https://klawka.pl/home",
       "imageFileName": "klawka.svg",
+      "techIcons": ["2_Spring.svg", "5_React.svg", "6_JavaScript.svg", "3_MySql.svg"],
       "deployed": true
     },
     {
       "title": "BitMage",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "desc": "Console app for generating ASCII images from files.",
       "url": "https://github.com/4thlas/BitMage",
       "imageFileName": "bitmage.svg",
+      "techIcons": ["1_Java.svg"],
       "deployed": false
     },
     {
       "title": "VoTail - Frontend",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
+      "desc": "School project, simple voting system made with friends.",
       "url": "https://github.com/Votail/votail-frontend",
       "imageFileName": "VoTail.svg",
-      "deployed": false
-    },
-    {
-      "title": "klawka.pl",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio.",
-      "url": "https://klawka.pl/home",
-      "imageFileName": "klawka.svg",
+      "techIcons": ["5_React.svg", "6_JavaScript.svg"],
       "deployed": false
     }
   ]

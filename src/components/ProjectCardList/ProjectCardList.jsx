@@ -26,6 +26,7 @@ function ProjectCardList()
                         title={project?.title}
                         desc={project?.desc}
                         image={images["/src/assets/projectImages/" + project?.imageFileName]}
+                        techIconsFileNames={project?.techIcons}
                         url={project?.url}
                         deployed={project?.deployed}
                     />
@@ -45,6 +46,7 @@ function ProjectCardList()
                         title={project?.title}
                         desc={project?.desc}
                         image={images["/src/assets/projectImages/" + project?.imageFileName]}
+                        techIconsFileNames={project?.techIcons}
                         url={project?.url}
                         deployed={project?.deployed}
                     />
