@@ -14,7 +14,7 @@ function Header()
         <div className="text-center flex-center w-100">
             <h1 className="text-accent">ATHLAS</h1>
             <h2>Self-taught Full Stack Developer</h2>
-            <p className="text-dim text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum purus, eget malesuada odio. Donec tristique tortor dui, et ullamcorper eros accumsan sit amet. Nulla at ultrices eros.</p>
+            <p className="text-dim text-left">Started coding in C++ at 14; now coding is my burning passion.</p>
         </div>
 
 

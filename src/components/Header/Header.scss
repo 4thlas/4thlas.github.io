@@ -1,7 +1,9 @@
 header
 {
     min-height: 800px;
-    padding-top: 15px;
+
+
+    p {padding: 0 30px}
 }
 
 @media (min-width: 768px)

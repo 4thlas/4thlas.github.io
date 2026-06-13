@@ -1,6 +1,7 @@
 import "@/styles/globals.scss";
 import "./StarBackground.scss";
 import {useEffect, useRef} from "react";
+import {useRenderMode} from "@/context/RenderModeContext.jsx";
 
 const STARS_PER_LAYER = 200;
 const SPEED = 0.2;
@@ -9,9 +10,11 @@ function StarBackground()
 {
     const canvasRefs = useRef([]);
 
+    const { perfModeEnabled } = useRenderMode();
+
     useEffect(() =>
     {
-        const canvases = canvasRefs.current.map(c => c);
+        const canvases = canvasRefs.current.filter(Boolean);
 
         canvases.forEach(canvas =>
         {
@@ -23,7 +26,7 @@ function StarBackground()
             const ctx = canvas.getContext("2d");
 
             // draw stars randomly
-            for (let i = 1; i <= STARS_PER_LAYER; i++)
+            for (let i = 1; i <= STARS_PER_LAYER * (perfModeEnabled ? 3 : 1); i++)
             {
                 const x = Math.random() * rect.width;
                 const y = Math.random() * rect.height;
@@ -41,6 +44,8 @@ function StarBackground()
             targetScroll = window.scrollY;
         }
 
+        handleScroll();
+
         const animate = () =>
         {
             canvases.forEach((canvas, index) =>
@@ -56,11 +61,11 @@ function StarBackground()
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll);
 
-    }, []);
+    }, [perfModeEnabled]);
 
     return <div className="star-background">
         {
-            [0, 1, 2].map((i) =>
+            (perfModeEnabled ? [0] : [0, 1, 2]).map((i) =>
                 <canvas
                     key={i}
                     ref={c => canvasRefs.current[i] = c}
@@ -69,4 +74,4 @@ function StarBackground()
     </div>;
 }
 
-export default StarBackground
+export default StarBackground;

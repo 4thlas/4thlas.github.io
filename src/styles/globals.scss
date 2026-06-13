@@ -43,11 +43,6 @@ main
     gap: 60px;
 }
 
-header
-{
-    p {padding: 0 30px}
-}
-
 @media (min-width: 768px)
 {
     .page-center-col
@@ -162,6 +157,8 @@ h1, h2, h3, h4, h5, h6
 }
 
 h1 { font-size: $font-size-huge; }
+
+p {margin: 15px 0}
 
 .text-center { text-align: center !important; }
 .text-left { text-align: left !important; }

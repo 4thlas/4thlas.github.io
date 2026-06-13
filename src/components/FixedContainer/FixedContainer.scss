@@ -1,0 +1,9 @@
+.fixed-container
+{
+    position: fixed;
+
+    &.left { left: 15px; }
+    &.right { right: 15px; }
+    &.top { top: 15px; }
+    &.bottom { bottom: 15px; }
+}

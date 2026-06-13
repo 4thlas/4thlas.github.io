@@ -1,0 +1,38 @@
+@use "@/styles/vars.scss" as *;
+
+.switch
+{
+    width: 50px;
+    height: 30px;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    background-color: $white;
+
+    border-radius: 15px;
+
+    &, *
+    {
+        transition: all 0.5s ease;
+    }
+
+    input { display: none; }
+
+    .slider
+    {
+        display: block;
+
+        height: 100%;
+        aspect-ratio: 1 / 1;
+
+        border-radius: 50%;
+        background-color: $black;
+    }
+
+    &.on
+    {
+        background-color: $accent-color;
+        .slider { transform: translateX(20px); }
+    }
+}
