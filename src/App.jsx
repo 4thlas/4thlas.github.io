@@ -7,6 +7,7 @@ import "@/styles/index.scss";
 import FixedContainer from "@/components/FixedContainer/FixedContainer.jsx";
 import Switch from "@/components/Switch/Switch.jsx";
 import { useRenderMode } from "@/context/RenderModeContext.jsx";
+import { PerformanceIcon } from "@/components/UiIcons/UiIcons.jsx";
 
 function App()
 {
@@ -15,7 +16,12 @@ function App()
         <StarBackground />
 
         <FixedContainer x="right" y="top">
-            <Switch label="Lightweight mode" value={perfModeEnabled} onChange={setPerfMode} />
+            <Switch
+                labelIcon={PerformanceIcon}
+                title="Performance Mode"
+                value={perfModeEnabled}
+                onChange={setPerfMode}
+            />
         </FixedContainer>
 
         <Header />

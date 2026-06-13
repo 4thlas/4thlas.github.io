@@ -1,8 +1,13 @@
 import "./Switch.scss";
 
-function Switch({label, value = false, onChange })
+function Switch({label, labelIcon: LabelIcon, title, value = false, onChange })
 {
-    return <label className="switch-label row g-15 flex-center">
+    return <label
+        className={`switch-label row g-15 flex-center ${value ? "on" : "off"}`}
+        title={title}
+    >
+        {LabelIcon && <LabelIcon />}
+
         <div className={`switch ${value ? "on" : "off"}`}>
             <input
                 type="checkbox"
@@ -11,7 +16,7 @@ function Switch({label, value = false, onChange })
             />
             <span className="slider" />
         </div>
-        <span>{label}</span>
+        {label && <span>{label}</span>}
     </label>;
 }
 

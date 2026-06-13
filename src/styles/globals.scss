@@ -43,6 +43,8 @@ main
     gap: 60px;
 }
 
+* { -webkit-tap-highlight-color: transparent; }
+
 @media (min-width: 768px)
 {
     .page-center-col

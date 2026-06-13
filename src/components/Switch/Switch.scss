@@ -1,5 +1,23 @@
 @use "@/styles/vars.scss" as *;
 
+.switch-label
+{
+    cursor: pointer;
+
+    &, *
+    {
+        transition: all 0.5s ease;
+    }
+
+    svg
+    {
+        color: $white;
+        height: 30px;
+    }
+
+    &.on svg {color: $accent-color}
+}
+
 .switch
 {
     width: 50px;
@@ -11,11 +29,6 @@
     background-color: $white;
 
     border-radius: 15px;
-
-    &, *
-    {
-        transition: all 0.5s ease;
-    }
 
     input { display: none; }
 

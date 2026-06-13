@@ -2,6 +2,8 @@
 {
     position: fixed;
 
+    z-index: 1;
+
     &.left { left: 15px; }
     &.right { right: 15px; }
     &.top { top: 15px; }
