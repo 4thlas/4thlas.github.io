@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "klawka.pl",
-      "desc": "Item shop for Minecraft server. Both frontend and backend were made by me.",
+      "desc": "Item shop for Minecraft server. My biggest project so far.",
       "url": "https://klawka.pl/home",
       "imageFileName": "klawka.svg",
       "techIcons": ["2_Spring.svg", "5_React.svg", "6_JavaScript.svg", "3_MySql.svg"],

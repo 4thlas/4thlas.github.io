@@ -16,6 +16,9 @@ function App()
 
     useEffect(() =>
     {
+        const scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollY >= 20) return;
+
         document.querySelectorAll(".fade-in").forEach((element, index) =>
         {
             element.style.animationDelay = index * 0.2 + "s";
