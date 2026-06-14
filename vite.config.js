@@ -11,5 +11,7 @@ export default defineConfig({
     plugins: [
         react(),
     ],
-    base: '/4thlas.github.io/'
+    base: process.env.NODE_ENV === 'production'
+        ? '/4thlas.github.io/'
+        : '/'
 })
