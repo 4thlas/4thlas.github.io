@@ -19,6 +19,8 @@
 {
     width: 90px;
     height: auto;
+
+    z-index: 1;
 }
 
 .circle-container
@@ -53,17 +55,18 @@
     animation: counter-spin var(--rotation-speed) linear infinite;
 }
 
-
-
 .icon-wrapper
 {
     grid-area: 1 / 1;
 
     --ca: calc(var(--icon-index) * var(--ba));
 
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+
     transform:
+        scale(0.1)
         rotate(var(--ca))
-        translate(var(--r))
         rotate(calc(-1 * var(--ca)));
 }
 
@@ -123,5 +126,18 @@
         -webkit-transform: rotate(-360deg);
         -o-transform: rotate(-360deg);
         transform: rotate(-360deg);
+    }
+}
+
+@keyframes fade-in
+{
+    to
+    {
+        transform:
+                scale(1)
+                rotate(var(--ca))
+                translate(var(--r))
+                rotate(calc(-1 * var(--ca)));
+        opacity: 1;
     }
 }

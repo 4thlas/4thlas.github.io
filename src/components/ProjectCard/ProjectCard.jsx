@@ -19,7 +19,7 @@ function ProjectCard({title, desc, image, url, techIconsFileNames, deployed})
 
     const techIcons = techIconsFileNames.map(filename => techIconsMap[`/src/assets/icons/techIcons/${filename}`]);
 
-    return <div className="perspective-wrapper">
+    return <div className="perspective-wrapper fade-in">
         <a href={url} target="_blank" className="project-card col p-30 col-space-between g-15" ref={cardRef}>
             <div className="col g-15">
                 <img src={image} alt={title} />

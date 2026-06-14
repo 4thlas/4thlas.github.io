@@ -14,7 +14,7 @@ function ProjectCardList()
 {
     return <div className="g-30 flex-center">
         <div className="g-30 flex-center">
-            <div className="flex-center">
+            <div className="flex-center fade-in">
                 <h2>My deployed works</h2>
                 <span className="text-dim">Projects I made that are currently running</span>
             </div>
@@ -34,7 +34,7 @@ function ProjectCardList()
             </div>
         </div>
         <div className="g-30 flex-center">
-            <div className="flex-center">
+            <div className="flex-center fade-in">
                 <h2>My projects</h2>
                 <span className="text-dim">Projects that I made for fun / to learn</span>
             </div>

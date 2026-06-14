@@ -12,13 +12,13 @@ function Header()
         <Avatar />
 
         <div className="text-center flex-center w-100">
-            <h1 className="text-accent">ATHLAS</h1>
-            <h2>Self-taught Full Stack Developer</h2>
-            <p className="text-dim text-left">Started coding in C++ at 14; now coding is my burning passion.</p>
+            <h1 className="text-accent fade-in">ATHLAS</h1>
+            <h2 className="fade-in">Self-taught Full Stack Developer</h2>
+            <p className="text-dim text-left fade-in">Started coding in C++ at 14; now coding is my burning passion.</p>
         </div>
 
 
-        <address className="text-center col g-15">
+        <address className="text-center col g-15 fade-in">
 
             <span>Contact me!</span>
 

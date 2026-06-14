@@ -8,6 +8,8 @@
     font-style: normal;
 }
 
+* { -webkit-tap-highlight-color: transparent; }
+
 body, html
 {
     position: relative;
@@ -43,8 +45,6 @@ main
     gap: 60px;
 }
 
-* { -webkit-tap-highlight-color: transparent; }
-
 @media (min-width: 768px)
 {
     .page-center-col
@@ -63,7 +63,7 @@ main
 }
 
 
-/* Sizing and layout */
+// Sizing and layout
 .w-25 { width: 25%; }
 .w-50 { width: 50%; }
 .w-75 { width: 75%; }
@@ -152,7 +152,7 @@ main
 .g-30 { gap: 30px !important; }
 
 
-/* Text */
+// Text
 h1, h2, h3, h4, h5, h6
 {
     margin: 10px 0;
@@ -170,7 +170,7 @@ p {margin: 15px 0}
 .text-dim { color: $gray; }
 
 
-/* Scrollbar */
+// Scrollbar
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: $dark-blue; }
 ::-webkit-scrollbar-thumb { background: $gray; cursor: grab; }
@@ -178,7 +178,7 @@ p {margin: 15px 0}
 ::-webkit-scrollbar-thumb:active {cursor: grabbing; }
 
 
-/* Misc */
+// Misc
 .no-select
 {
     -webkit-touch-callout: none;
@@ -190,3 +190,21 @@ p {margin: 15px 0}
 }
 
 address { font-style: normal; }
+
+.fade-in
+{
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+}
+
+// Animation
+
+@keyframes fade-in
+{
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

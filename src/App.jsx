@@ -8,10 +8,20 @@ import FixedContainer from "@/components/FixedContainer/FixedContainer.jsx";
 import Switch from "@/components/Switch/Switch.jsx";
 import { useRenderMode } from "@/context/RenderModeContext.jsx";
 import { PerformanceIcon } from "@/components/UiIcons/UiIcons.jsx";
+import {useEffect} from "react";
 
 function App()
 {
     const { perfModeEnabled, setPerfMode } = useRenderMode();
+
+    useEffect(() =>
+    {
+        document.querySelectorAll(".fade-in").forEach((element, index) =>
+        {
+            element.style.animationDelay = index * 0.2 + "s";
+        });
+    }, []);
+
     return <>
         <StarBackground />
 

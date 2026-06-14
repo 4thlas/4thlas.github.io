@@ -24,7 +24,7 @@ function ScrollDownPrompt({minY, maxY})
         return () => window.removeEventListener("scroll", updateState);
     }, [minY, maxY]);
 
-    return <div className={`scroll-down-wrapper ${isInRange ? "" : "invisible"}`}>
+    return <div className={`scroll-down-wrapper ${isInRange ? "" : "invisible"} fade-in`}>
         <LottieComponent animationData={scrollDown} loop autoplay />
     </div>
 }

@@ -1,5 +1,7 @@
 import avatar from "@/assets/avatar.svg";
 import "./Avatar.scss";
+import "@/styles/index.scss"
+import {useEffect} from "react";
 
 const techIcons = import.meta.glob(
     "@/assets/icons/techIcons/*.svg",
@@ -13,8 +15,16 @@ const iconCount = Object.keys(techIcons).length;
 
 function Avatar()
 {
+    useEffect(() =>
+    {
+        document.querySelectorAll(".icon-wrapper").forEach((element, index) =>
+        {
+            element.style.animationDelay = index * 0.1 + "s";
+        });
+    }, []);
+
     return (
-        <div className="avatar-wrapper no-select">
+        <div className="avatar-wrapper no-select fade-in">
             <img
                 className="avatar"
                 src={avatar}
